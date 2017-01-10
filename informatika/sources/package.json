@@ -1,0 +1,24 @@
+{
+  "name": "informatika",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jaroslav Meleg",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.4.7",
+    "angular-route": "^1.4.7",
+    "angular-sanitize": "^1.6.1",
+    "bootstrap": "^3.3.7",
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "jquery": "^3.1.1",
+    "load-grunt-tasks": "^3.5.2"
+  }
+}

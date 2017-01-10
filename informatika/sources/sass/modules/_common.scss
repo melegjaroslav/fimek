@@ -1,0 +1,35 @@
+.float--right{
+	float: right;
+}
+.panel-heading{
+	.panel-title{
+		.btn{
+			margin-top: -6px;
+			padding-top: 4px;
+			padding-bottom: 3px;
+			margin-right: -10px;
+			color: #fff;
+		}
+	}
+}
+
+.page-title{
+	margin-top: 60px;
+}
+
+.input-group{
+	margin-bottom: 8px;
+}
+
+.project{
+	min-height: 490px;
+}
+
+/* visited link */
+a:visited {
+    text-decoration: none;
+}
+/* selected link */
+a:active {
+    text-decoration: none;
+} 

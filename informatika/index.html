@@ -1,0 +1,41 @@
+<!doctype html>
+<html data-ng-app="informatika" data-ng-controller="RootController as rootCtrl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Informatika</title>
+        <link rel="stylesheet" href="sources/node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="css/main.min.css">
+    </head>
+    <body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand btn" data-ng-click="rootCtrl.goHome();" >Department Informatike</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li><a class="btn" data-ng-click="rootCtrl.goTo('projects')">Projekti</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+			<a class="navbar-brand logo" target="_blank" href="http://www.fimek.edu.rs/">
+				<img alt="" src="img/logo/logo.png">
+			</a>
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+        <main class="container" data-ng-view></main>
+		 
+		<script src="sources/node_modules/jquery/dist/jquery.js"></script>
+		<script src="sources/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

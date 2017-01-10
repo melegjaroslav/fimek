@@ -1,0 +1,57 @@
+<div>
+	<div class="page-header">
+		<h1 class="page-title">ADMINISTRATOR</h1>
+	</div>
+	
+	<!-- start Content -->
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Sadržaj</h3>
+		</div>
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-md-12" data-ng-repeat="content in adminCtrl.content.data">
+					<div class="thumbnail">
+						<img src="" alt="">
+						<div class="caption">
+							<p>{{content.content}}</p>
+							<p><a href="javascript:void(0);" class="btn btn-primary" data-ng-click="rootCtrl.goTo('edit-content/1')" role="button">Edit</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end Content -->
+
+	<!-- start Projects -->
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Projekti <a href="javascript:void(0);" data-ng-click="rootCtrl.goTo('add-project')" class="btn btn-primary float--right" role="button">Add</a></h3>
+			
+		</div>
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-md-12" data-ng-repeat="project in adminCtrl.projects.data">
+					<div class="thumbnail projects-admin">
+						<img class="col-md-6" src="{{project.thumbnail}}" alt="">
+						<div class="caption col-md-6">
+							<h3>{{project.name}}</h3>
+							<h4>{{project.author}}</h4>
+							<p>{{project.description}}</p>
+							<p><a href="javascript:void(0);" class="btn btn-primary" data-ng-click="rootCtrl.goTo('edit-project/'+project.id)" role="button">Edit</a> <a href="javascript:void(0);" data-ng-click="adminCtrl.deleteProject(project.id);" class="btn btn-default" role="button">Delete</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end Projects -->
+</div>
+
+
+
+
+
+
+

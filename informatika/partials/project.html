@@ -1,0 +1,21 @@
+<div class="well">
+	<div class="page-header">
+		<h1 class="">{{projectCtrl.project.data[0].name}}</h1>
+	</div>
+	
+	<div class="single-project">
+		<div class="row">
+				<div class="col-md-12">
+					<div class="thumbnail projects-admin">
+						<img class="col-md-6" src="{{projectCtrl.project.data[0].thumbnail}}" alt="">
+						<div class="caption col-md-6">
+							<h3>{{projectCtrl.project.data[0].name}}</h3>
+							<h4>{{projectCtrl.project.data[0].author}}</h4>
+							<p>{{projectCtrl.project.data[0].description}}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		<p>{{projectCtrl.project.data[0].content}}</p>
+	</div>
+</div>

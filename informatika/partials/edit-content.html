@@ -1,0 +1,13 @@
+<div class="well edit-content">
+	<div class="page-header">
+		<h1 class="page-title">AŽURIRAJ SADRŽAJ</h1>
+	</div>
+	<form name="myForm">
+		<div class="input-group">
+			<span class="input-group-addon" id="content"><span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span></span>
+			<textarea type="textarea" class="form-control edit-content" placeholder="Sadržaj" name="content" ng-model="contentCtrl.content.data[0].content" required ng-trim="false"></textarea>
+		</div>
+		<!-- <p>{{contentCtrl.content.data[0]}}</p> -->
+		<input type="submit" ng-click="contentCtrl.updateContent();" value="Update" />
+	</form>
+</div>

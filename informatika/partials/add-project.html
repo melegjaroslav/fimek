@@ -1,0 +1,36 @@
+<div class="well">
+	<div class="page-header">
+		<h1 class="page-title">DODAJ PROJEKAT</h1>
+	</div>
+	<form name="myForm">
+		<div class="input-group">
+			<span class="input-group-addon" id="name"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span></span>
+			<input type="text" class="form-control" placeholder="Ime projekta" name="name" ng-model="projectCtrl.name" required ng-trim="false">
+		</div>
+		<div class="input-group">
+			<span class="input-group-addon" id="author"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
+			<input type="text" class="form-control" placeholder="Ime autora" name="author" ng-model="projectCtrl.author" required ng-trim="false">
+		</div>
+		<div class="input-group">
+			<span class="input-group-addon" id="description"><span class="glyphicon glyphicon-file" aria-hidden="true"></span></span>
+			<textarea type="text" class="form-control" placeholder="Kratak opis projekta" name="description" ng-model="projectCtrl.description" required ng-trim="false"></textarea>
+		</div>
+		<div class="input-group">
+			<span class="input-group-addon" id="content"><span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span></span>
+			<textarea type="textarea" class="form-control edit-content" placeholder="Sadržaj" name="content" ng-model="projectCtrl.content" required ng-trim="false"></textarea>
+		</div>
+		<div class="input-group">
+			<span class="input-group-addon" id="thumbnail"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span></span>
+			<input type="text" class="form-control" placeholder="Link slike projekta" name="thumbnail" ng-model="projectCtrl.thumbnail" required ng-trim="false">
+		</div>
+		 <p>{{projectCtrl.form.name}}</p>
+		<!-- <p>{{projectCtrl.name}}</p>
+		<p>{{projectCtrl.author}}</p>
+		<p>{{projectCtrl.description}}</p>
+		<p>{{projectCtrl.thumbnail}}</p>
+		<p>{{projectCtrl.link}}</p> -->
+		<input type="submit" ng-click="projectCtrl.addProject();" class="btn btn-primary" value="Add" />
+		<a href="javascript:void(0);" class="btn btn-danger" data-ng-click="projectCtrl.clear();" role="button">Clear</a>
+	</form>
+		
+</div>
