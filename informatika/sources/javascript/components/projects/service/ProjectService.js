@@ -1,7 +1,7 @@
 angular.module('informatika.ProjectService',[]).service('ProjectService',['$http',function($http){
     
     this.getProjects = function (successCallback, errorCallback) {
-        $http.get('/informatika/services/rest.php/projects').then(function (data) {
+        $http.get('/services/rest.php/projects').then(function (data) {
             successCallback(data);
         }).catch(function (data) {
             errorCallback(data);
@@ -9,7 +9,7 @@ angular.module('informatika.ProjectService',[]).service('ProjectService',['$http
     };
 
     this.getProject = function (id, successCallback, errorCallback) {
-        $http.get('/informatika/services/rest.php/project?pid='+id).then(function (data) {
+        $http.get('/services/rest.php/project?pid='+id).then(function (data) {
             successCallback(data);
         }).catch(function (data) {
             errorCallback(data);
@@ -17,7 +17,7 @@ angular.module('informatika.ProjectService',[]).service('ProjectService',['$http
     };
 
     this.addProject = function (name, author, description, content, thumbnail, link, successCallback, errorCallback) {
-        $http.post('/informatika/services/rest.php/project', {name: name, author: author, description: description, content: content,thumbnail: thumbnail, link: link})
+        $http.post('/services/rest.php/project', {name: name, author: author, description: description, content: content,thumbnail: thumbnail, link: link})
         .then(function (data) {
             successCallback(data);
         }).catch(function (data) {
@@ -26,7 +26,7 @@ angular.module('informatika.ProjectService',[]).service('ProjectService',['$http
     };
 
     this.updateProject = function (id, name, author, description, content, thumbnail, link, successCallback, errorCallback) {
-        $http.put('/informatika/services/rest.php/project', {id: id, name: name, author: author, description: description, content: content, thumbnail: thumbnail, link: link})
+        $http.put('/services/rest.php/project', {id: id, name: name, author: author, description: description, content: content, thumbnail: thumbnail, link: link})
         .then(function (data) {
             successCallback(data);
         }).catch(function (data) {
@@ -35,7 +35,7 @@ angular.module('informatika.ProjectService',[]).service('ProjectService',['$http
     };
 
     this.deleteProject = function (id, successCallback, errorCallback) {
-        $http.delete('/informatika/services/rest.php/project?pid='+id).then(function (data) {
+        $http.delete('/services/rest.php/project?pid='+id).then(function (data) {
             successCallback(data);
         }).catch(function (data) {
             errorCallback(data);
